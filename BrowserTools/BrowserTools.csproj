@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Firefox.cs" />
+    <Compile Include="InternetExplorer.cs" />
     <Compile Include="LoginData.cs" />
     <Compile Include="Base\Chromium.cs" />
     <Compile Include="BrowserName.cs" />

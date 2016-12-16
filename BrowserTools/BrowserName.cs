@@ -4,6 +4,8 @@
     {
         Chrome,
         Opera,
-        Yandex
+        Yandex,
+        Firefox,
+        InternetExplorer
     }
 }
